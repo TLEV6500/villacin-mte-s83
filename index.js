@@ -1,10 +1,14 @@
 import products from "./coffeeData.json" with { type: "json" };
 
+let bestSellers = products
+    ? products
+    : await (await fetch("/villacin-mte-s83/coffeeData.json")).json();
+
 const container = document.getElementById("product-container");
 
 let cardsHTML = "";
 
-products.forEach((product) => {
+bestSellers.forEach((product) => {
     cardsHTML += `
         <div class="col-12 col-md-6 col-xl-3">
             <div id="${product.id}" class="card brutalist-glass h-100">
