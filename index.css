@@ -1,0 +1,128 @@
+:root {
+    --silver: #c8c8c8;
+    --silver-2: #b3b3b3;
+    --dry-sage: #bbb891;
+    --toasted-almond: #dc965a;
+    --shadow-grey: #242325;
+
+    --bs-primary: var(--toasted-almond);
+    --bs-primary-rgb: 220, 150, 90;
+    --bs-secondary: var(--dry-sage);
+    --bs-secondary-rgb: 187, 184, 145;
+    --bs-light: var(--silver);
+    --bs-light-rgb: 200, 200, 200;
+    --bs-dark: var(--shadow-grey);
+    --bs-dark-rgb: 36, 35, 37;
+    --bs-body-color: var(--shadow-grey);
+    --bs-body-color-rgb: 36, 35, 37;
+    --bs-secondary-bg: var(--silver-2);
+}
+
+body {
+    background-color: var(--silver);
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    letter-spacing: -0.02em;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.bg-shape {
+    position: fixed;
+    z-index: -1;
+    filter: blur(80px);
+    opacity: 0.7;
+    border-radius: 50%;
+}
+.shape-sage {
+    top: -10%;
+    right: -5%;
+    width: 50vw;
+    height: 50vw;
+    background: var(--dry-sage);
+}
+.shape-almond {
+    bottom: 10%;
+    left: -10%;
+    width: 40vw;
+    height: 40vw;
+    background: var(--toasted-almond);
+}
+
+.brutalist-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 3px solid var(--shadow-grey);
+    border-radius: 0;
+    box-shadow: 8px 8px 0 var(--shadow-grey);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--toasted-almond);
+    --bs-btn-border-color: var(--shadow-grey);
+    --bs-btn-color: var(--shadow-grey);
+    --bs-btn-hover-bg: #c7834a;
+    --bs-btn-hover-border-color: var(--shadow-grey);
+    --bs-btn-hover-color: var(--shadow-grey);
+    --bs-btn-active-bg: #ba7943;
+    --bs-btn-active-border-color: var(--shadow-grey);
+    --bs-btn-active-color: var(--shadow-grey);
+
+    border: 3px solid var(--shadow-grey);
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 var(--shadow-grey);
+    transition: all 0.1s ease;
+}
+
+.btn-primary:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--shadow-grey);
+}
+
+.btn-primary:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--shadow-grey);
+}
+
+.brutalist-input {
+    border: 3px solid var(--shadow-grey);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+}
+.brutalist-input:focus {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: var(--toasted-almond);
+    box-shadow: 4px 4px 0 var(--shadow-grey);
+    outline: none;
+}
+
+.card-img-placeholder {
+    height: 250px;
+    background: rgba(36, 35, 37, 0.1);
+    border-bottom: 3px solid var(--shadow-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--shadow-grey);
+}
+
+a {
+    --bs-link-color: var(--shadow-grey);
+    --bs-link-hover-color: var(--toasted-almond);
+    font-weight: 600;
+}

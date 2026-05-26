@@ -1,0 +1,30 @@
+[
+    {
+        "id": "bestseller-1",
+        "title": "Ethiopia Yirgacheffe",
+        "description": "Bright acidity with floral notes. Perfect for manual pour-overs.",
+        "price": "₱650",
+        "icon": "fa-seedling"
+    },
+    {
+        "id": "bestseller-2",
+        "title": "Colombia Supremo",
+        "description": "Chocolatey and full-bodied. Excels when extracted via Moka Pot.",
+        "price": "₱580",
+        "icon": "fa-mountain-sun"
+    },
+    {
+        "id": "bestseller-3",
+        "title": "Moka Pot Starter Kit",
+        "description": "Everything needed to pull intense, syrupy shots on the go.",
+        "price": "₱1,200",
+        "icon": "fa-fire-burner"
+    },
+    {
+        "id": "bestseller-4",
+        "title": "Brazil Cerrado",
+        "description": "Nutty, sweet, and low acidity. A robust daily driver.",
+        "price": "₱550",
+        "icon": "fa-mug-hot"
+    }
+]

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpecialtyCoffee | s83 MTE</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/d041497b4c.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="bg-shape shape-sage"></div>
+        <div class="bg-shape shape-almond"></div>
+
+        <header class="container mt-4">
+            <nav class="navbar navbar-expand-lg brutalist-glass px-4 py-3">
+                <a href="#" title="Specialty Coffee" class="navbar-brand fs-3">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    SC
+                </a>
+
+                <button
+                    class="navbar-toggler rounded-0 border-dark border-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-3 text-uppercase">
+                        <li class="nav-item">
+                            <a
+                                href="#"
+                                class="nav-link active"
+                                aria-current="page"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#highlights" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul
+                        class="navbar-nav mt-3 gap-3 fs-6 flex-row justify-content-between"
+                    >
+                        <li class="navbar-item">
+                            <a href="#" title="Search" class="nav-link">
+                                <span class="d-md-none me-2">Search</span>
+                                <i class="fa-solid fa-magnifying-glass"></i
+                            ></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" title="View Cart" class="nav-link">
+                                <span class="d-md-none me-2">View Cart</span>
+                                <i class="fa-solid fa-cart-shopping"></i
+                            ></a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" title="Login" class="nav-link">
+                                <span class="d-md-none me-2">Login</span>
+                                <i class="fa-solid fa-right-to-bracket"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="container py-5 mt-5">
+                <div class="row align-items-center min-vh-50">
+                    <div class="col-lg-8">
+                        <h1
+                            class="display-2 bg-light d-inline-block px-3 py-2 border border-3 border-dark mb-4"
+                        >
+                            Plenty to choose from our specialty collection
+                        </h1>
+                        <p
+                            class="lead fs-3 fw-semibold w-75 p-3 brutalist-glass"
+                        >
+                            Explore our diverse selection of specialty beans.
+                            Delivered right to your doorstep.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="container py-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="display-5">
+                            We love specialty coffee and want you to explore the
+                            world of coffee with us.
+                        </h2>
+                    </div>
+                    <div
+                        class="col-lg-6 border-start border-dark border-3 px-4"
+                    >
+                        <p class="fs-4">
+                            There are so many ways to make coffee, and so many
+                            types of coffee to make. Our mission is to make all
+                            of coffee accessible to as many people as possible,
+                            without compromising quality.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="highlights" class="container py-5">
+                <div
+                    class="d-flex justify-content-between align-items-end mb-5 border-bottom border-dark border-3 pb-3"
+                >
+                    <div>
+                        <h2 class="display-4 mb-0">Best Sellers</h2>
+                        <p class="fs-5 mb-0 mt-2">
+                            Explore the top picks of our customers.
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-primary px-4 py-2">View All</a>
+                </div>
+
+                <div id="product-container" class="row g-4"></div>
+            </section>
+
+            <section id="contact" class="container py-5 mb-5">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 mb-4">
+                            Need help with coffee for yourself or your business?
+                        </h2>
+                        <p class="fs-4 p-3 brutalist-glass">
+                            Fill out the inquiry form, and we'll reach out in a
+                            day or two.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form
+                            class="brutalist-glass p-5 d-flex flex-column gap-4"
+                        >
+                            <div>
+                                <label class="form-label fw-bold">Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control brutalist-input py-2"
+                                />
+                            </div>
+                            <div>
+                                <label class="form-label fw-bold">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control brutalist-input py-2"
+                                />
+                            </div>
+                            <div>
+                                <label class="form-label fw-bold"
+                                    >Message</label
+                                >
+                                <textarea
+                                    class="form-control brutalist-input py-2"
+                                    rows="4"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary py-3 fs-5 w-100"
+                            >
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container mb-4">
+            <div
+                class="brutalist-glass p-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+            >
+                <ul class="nav text-uppercase fw-bold mb-3 mb-md-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-dark">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#highlights" class="nav-link text-dark"
+                            >Shop</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-dark"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+                <p class="mb-0 fw-bold">
+                    &copy; SpecialtyCoffee 2026. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
