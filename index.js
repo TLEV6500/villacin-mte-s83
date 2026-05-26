@@ -1,8 +1,6 @@
-import products from "./coffeeData.json" with { type: "json" };
+// import products from "./coffeeData.json" with { type: "json" };
 
-let bestSellers = products
-    ? products
-    : await (await fetch("/villacin-mte-s83/coffeeData.json")).json();
+let bestSellers = await (await fetch("/villacin-mte-s83/coffeeData.json")).json();
 
 const container = document.getElementById("product-container");
 
