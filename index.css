@@ -126,3 +126,8 @@ a {
     --bs-link-hover-color: var(--toasted-almond);
     font-weight: 600;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
